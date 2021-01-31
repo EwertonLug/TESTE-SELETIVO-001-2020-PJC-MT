@@ -63,6 +63,10 @@ Clicar em Save
 
 `docker container ls`
 
+- Acessanco OS do container postgres-server
+
+`docker exec -it postgres-server /bin/bash`
+
 - Configurado pg_hba.conf para permitir acesso externo:
 
 `host	all		        all		        0.0.0.0/0		        md5`
