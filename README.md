@@ -1,18 +1,16 @@
 # TESTE-SELETIVO-001-2020-PJC-MT
 Teste prático para Administrador de Dados do processo seletivo 001/2020/PJC/MT
 
+**Table of Contents**
+
+[TOCM]
+
 # Sumário
 
 1 - Iniciar Projeto - Mostra como configurar o projeto
 
 2 - Etapas - Mostra a resolução do teste.
 
-
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
 
 # 1 - Iniciar Projeto
 ## - Baixar as Imagens
