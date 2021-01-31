@@ -10,7 +10,8 @@ Teste prático para Administrador de Dados do processo seletivo 001/2020/PJC/MT
 
 Salve as imagens em um diretorio de facil acesso.
 ##### - Importar Imagens no Docker
-Com o docker instalado, abra o terminal como administrador e digite os comandos?
+Com o docker instalado, abra o terminal como administrador e digite os comandos:
+
 Para o Postgres
 `docker load -i <Caminho da imagem baixada do Postgres>`
 Para o PgAdmin
