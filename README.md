@@ -14,8 +14,8 @@ Teste prático para Administrador de Dados do processo seletivo 001/2020/PJC/MT
 
 | Image     | Link para baixar |
 | --------- | -----:|
-| PgAdmin-Template  | [Google Drive](https://drive.google.com/drive/folders/1-d8afIDvjm5_soSfJLEAsNaQd8Y2krAV?usp=sharing "Google Drive") |
-| Postgres-Template     |   [Google Drive](https://drive.google.com/drive/folders/1-d8afIDvjm5_soSfJLEAsNaQd8Y2krAV?usp=sharing "Google Drive") |
+| pgadmin4-seletivo  | [Google Drive](https://drive.google.com/drive/folders/1-d8afIDvjm5_soSfJLEAsNaQd8Y2krAV?usp=sharing "Google Drive") |
+| postgres-seletivo     |   [Google Drive](https://drive.google.com/drive/folders/1-d8afIDvjm5_soSfJLEAsNaQd8Y2krAV?usp=sharing "Google Drive") |
 
 Salve as imagens em um diretorio de facil acesso.
 ## - Importar Imagens no Docker
@@ -34,14 +34,14 @@ Criar um container do Postgres na rede `postgres-network` e configurar um volume
 
 NOTA: Substituir `CAMINHO_VOLUME_HOSPEDEIRO` por um diretorio do pc hospedeiro do Docker.
 
-`docker run --name postgres-server --network=postgres-network -e "POSTGRES_PASSWORD=postgres" -p 5432:5432 -v <CAMINHO_VOLUME_HOSPEDEIRO>:/var/lib/postgresql/data -d postgres-seletivo`
+`docker run --name postgres-server --network=postgres-network -e "POSTGRES_PASSWORD=postgres" -p 5432:5432 -v <CAMINHO_VOLUME_HOSPEDEIRO>:/var/lib/postgresql/data -d postgres-seletivo:versao1`
 
 ------------
 Criar um container do PgAdmin:
 
 NOTA: Substituir o email,senha e porta caso necessario.
 
-`docker run --name pgadmin --network=postgres-network -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=ewertonlug@hotmail.com" -e "PGADMIN_DEFAULT_PASSWORD=pg@123" -d pgadmin4-seletivo`
+`docker run --name pgadmin --network=postgres-network -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=ewertonlug@hotmail.com" -e "PGADMIN_DEFAULT_PASSWORD=pg@123" -d pgadmin4-seletivo:versao1`
 ## - Configurar PgAdmin
 Acessar: http://localhost:15432 
 
