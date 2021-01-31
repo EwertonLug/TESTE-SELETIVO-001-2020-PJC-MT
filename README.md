@@ -14,6 +14,7 @@ Com o docker instalado, abra o terminal como administrador e digite os comandos:
 
 Para o Postgres
 `docker load -i <Caminho da imagem baixada do Postgres>`
+
 Para o PgAdmin
 `docker load -i <Caminho da imagem baixada do PgAdmin>`
 ##### - Criar Rede
