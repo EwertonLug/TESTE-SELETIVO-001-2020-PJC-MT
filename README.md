@@ -103,5 +103,10 @@ Job
 
 ##  Segunda Etapa
 
+ [Acessar Scripts](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/tree/main/2%20-%20Segunda%20Etapa")
+ 
+##  Terceira Etapa
+
+ [Acessar Proposta](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/blob/main/3%20-%20Terceira%20Etapa/3%20ETAPA.pdf)
 
 
