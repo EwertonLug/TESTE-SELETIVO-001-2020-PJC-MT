@@ -1,6 +1,11 @@
 # TESTE-SELETIVO-001-2020-PJC-MT
 Teste prático para Administrador de Dados do processo seletivo 001/2020/PJC/MT
-# Iniciar Projeto
+
+# Sumário
+1 - Iniciar Projeto - Mostra como configurar o projeto
+
+2 - Etapas - Mostra a resolução do teste.
+# 1 - Iniciar Projeto
 ## - Baixar as Imagens
 
 | Image     | Link para baixar |
@@ -51,3 +56,44 @@ Na aba *Connection* colocar:
 -*Passsword*: `postgres`
 
 Clicar em Save
+# 2 - Etapas
+
+## Primeira Etapa
+- Levantados os containers do PostreSql e PgAdmin.
+
+`docker container ls`
+
+- Configurado pg_hba.conf para permitir acesso externo:
+
+`host	all		        all		        0.0.0.0/0		        md5`
+
+- Criado banco de dados dbPolicia
+
+- Criado script para fazer backup do bando de dados utilizando o editor nano.
+
+Acessar pasta backup:
+
+`cd /temp/bkp/dbPolicia`
+
+Acessar script
+
+` nano  /seletivo/backup-script.sh`
+
+- Instalado Cron e  para executar o script todo dia as 2h da manha.
+
+Iniciar cron
+
+`service cron start`
+
+Acessar Cron Jobs
+
+`nano /etc/crontab`
+
+Job
+
+`* 2 * * * root /bin/bash /seletivo/backup-script.sh > /seletivo/log.txt`
+
+##  Segunda Etapa
+
+
+
