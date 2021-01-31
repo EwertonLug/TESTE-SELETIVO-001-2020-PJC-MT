@@ -87,7 +87,7 @@ Acessar script
 
 ` nano  /seletivo/backup-script.sh`
 
-- Instalado Cron e  para executar o script todo dia as 2h da manha.
+- Instalado Cron para executar o script todo dia as 2h da manha.
 
 Iniciar cron
 
