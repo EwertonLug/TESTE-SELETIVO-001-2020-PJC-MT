@@ -103,12 +103,14 @@ Job
 
 `* 2 * * * root /bin/bash /seletivo/backup-script.sh > /seletivo/log.txt`
 
+[Acessar Arquivos](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/tree/main/1%20-%20Primeira%20Etapa)
+
 ## - Segunda Etapa
 
-- TESTE-SELETIVO-001-2020-PJC-MT/2 - Segunda Etapa/[Acessar Scripts](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/tree/main/2%20-%20Segunda%20Etapa)
+- TESTE-SELETIVO-001-2020-PJC-MT/2 - Segunda Etapa/[Acessar Arquivos](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/tree/main/2%20-%20Segunda%20Etapa)
  
 ## - Terceira Etapa
 
-- TESTE-SELETIVO-001-2020-PJC-MT/3 - Terceira Etapa/[Acessar Proposta](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/blob/main/3%20-%20Terceira%20Etapa/3%20ETAPA.pdf)
+- TESTE-SELETIVO-001-2020-PJC-MT/3 - Terceira Etapa/[Acessar Arquivo](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/blob/main/3%20-%20Terceira%20Etapa/3%20ETAPA.pdf)
 
 
