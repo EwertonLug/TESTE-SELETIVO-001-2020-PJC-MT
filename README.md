@@ -1,17 +1,21 @@
 # TESTE-SELETIVO-001-2020-PJC-MT
 Teste prático para Administrador de Dados do processo seletivo 001/2020/PJC/MT
 
+
 # Sumário
+
 1 - Iniciar Projeto - Mostra como configurar o projeto
 
 2 - Etapas - Mostra a resolução do teste.
+
+
 # 1 - Iniciar Projeto
 ## - Baixar as Imagens
 
 | Image     | Link para baixar |
 | --------- | -----:|
-| PgAdmin-Template  | https://drive.google.com/ |
-| Postgres-Template     |   https://drive.google.com/ |
+| pgadmin4-seletivo  | [Google Drive](https://drive.google.com/drive/folders/1-d8afIDvjm5_soSfJLEAsNaQd8Y2krAV?usp=sharing "Google Drive") |
+| postgres-seletivo     |   [Google Drive](https://drive.google.com/drive/folders/1-d8afIDvjm5_soSfJLEAsNaQd8Y2krAV?usp=sharing "Google Drive") |
 
 Salve as imagens em um diretorio de facil acesso.
 ## - Importar Imagens no Docker
@@ -30,14 +34,14 @@ Criar um container do Postgres na rede `postgres-network` e configurar um volume
 
 NOTA: Substituir `CAMINHO_VOLUME_HOSPEDEIRO` por um diretorio do pc hospedeiro do Docker.
 
-`docker run --name postgres-server --network=postgres-network -e "POSTGRES_PASSWORD=postgres" -p 5432:5432 -v <CAMINHO_VOLUME_HOSPEDEIRO>:/var/lib/postgresql/data -d postgres-seletivo`
+`docker run --name postgres-server --network=postgres-network -e "POSTGRES_PASSWORD=postgres" -p 5432:5432 -v <CAMINHO_VOLUME_HOSPEDEIRO>:/var/lib/postgresql/data -d postgres-seletivo:versao1`
 
 ------------
 Criar um container do PgAdmin:
 
 NOTA: Substituir o email,senha e porta caso necessario.
 
-`docker run --name pgadmin --network=postgres-network -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=ewertonlug@hotmail.com" -e "PGADMIN_DEFAULT_PASSWORD=pg@123" -d pgadmin4-seletivo`
+`docker run --name pgadmin --network=postgres-network -p 15432:80 -e "PGADMIN_DEFAULT_EMAIL=ewertonlug@hotmail.com" -e "PGADMIN_DEFAULT_PASSWORD=pg@123" -d pgadmin4-seletivo:versao1`
 ## - Configurar PgAdmin
 Acessar: http://localhost:15432 
 
@@ -58,7 +62,7 @@ Na aba *Connection* colocar:
 Clicar em Save
 # 2 - Etapas
 
-## Primeira Etapa
+## - Primeira Etapa
 - Levantados os containers do PostreSql e PgAdmin.
 
 `docker container ls`
@@ -83,7 +87,7 @@ Acessar script
 
 ` nano  /seletivo/backup-script.sh`
 
-- Instalado Cron e  para executar o script todo dia as 2h da manha.
+- Instalado Cron para executar o script todo dia as 2h da manha.
 
 Iniciar cron
 
@@ -97,7 +101,12 @@ Job
 
 `* 2 * * * root /bin/bash /seletivo/backup-script.sh > /seletivo/log.txt`
 
-##  Segunda Etapa
+## - Segunda Etapa
 
+- TESTE-SELETIVO-001-2020-PJC-MT/2 - Segunda Etapa/[Acessar Scripts](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/tree/main/2%20-%20Segunda%20Etapa)
+ 
+## - Terceira Etapa
+
+- TESTE-SELETIVO-001-2020-PJC-MT/3 - Terceira Etapa/[Acessar Proposta](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/blob/main/3%20-%20Terceira%20Etapa/3%20ETAPA.pdf)
 
 
