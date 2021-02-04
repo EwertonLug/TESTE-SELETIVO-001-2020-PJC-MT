@@ -107,6 +107,10 @@ Job
 
 ## - Segunda Etapa
 
+Criar um banco de dados `conveniencia` e fazer restore do script `1) e 2) Banco conveniencia populado.sql`
+
+A senha do usuario `usr_relatorio` é `123`
+
 - TESTE-SELETIVO-001-2020-PJC-MT/2 - Segunda Etapa/[Acessar Arquivos](https://github.com/EwertonLug/TESTE-SELETIVO-001-2020-PJC-MT/tree/main/2%20-%20Segunda%20Etapa)
  
 ## - Terceira Etapa
