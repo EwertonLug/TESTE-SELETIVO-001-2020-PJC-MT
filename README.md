@@ -67,7 +67,7 @@ Clicar em Save
 
 `docker container ls`
 
-- Acessanco OS do container postgres-server
+- Acessandoo OS do container postgres-server
 
 `docker exec -it postgres-server /bin/bash`
 
@@ -75,7 +75,9 @@ Clicar em Save
 
 `host	all		        all		        0.0.0.0/0		        md5`
 
-- Criado banco de dados dbPolicia
+- Criado banco de dados dbPolicia.
+
+`dbPolicia.sql` na pasta 1 - Primeira Etapa
 
 - Criado script para fazer backup do bando de dados utilizando o editor nano.
 
