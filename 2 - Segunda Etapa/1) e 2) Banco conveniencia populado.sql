@@ -56,7 +56,8 @@ CREATE TABLE public.usuario (
 
 
 ALTER TABLE public.usuario OWNER TO postgres;
-
+--Criando usuario:
+CREATE ROLE usr_relatorio LOGIN PASSWORD '123';
 --
 -- TOC entry 209 (class 1259 OID 16451)
 -- Name: venda; Type: TABLE; Schema: public; Owner: postgres
